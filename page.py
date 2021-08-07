@@ -17,9 +17,9 @@ def query(pageNumber, pageSize):
                 print(re)
 try:
         print("nhap so thu tu trang:")
-        a = int(input())
+        a = int(sys.argv[1])
         print("nhap so record trong trang")
-        b = int(input())
+        b = int(sys.argv[2])
         query(a,b)
 finally:
                 cur.close()
